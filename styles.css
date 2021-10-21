@@ -15,8 +15,12 @@
             border: 1px solid #1D1D1D;
             border-radius: 5px;
             margin-bottom: 15px;
+            
         }
-
+        .bildrechts {
+            float: right;
+            width: 13%;
+        }
         br {
             width: 100%;
             height: 1px;
