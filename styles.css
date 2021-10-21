@@ -1,0 +1,49 @@
+.elemente_und_tags,
+        .verschachtelung_von_elementen,
+        .alleinstehende_elemente,
+        .footer {
+            padding-left: 15px;
+            background-color: #1D1D1D;
+            border: 1px solid #1D1D1D;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .Inhaltsverzeichnis {
+            padding-left: 15px;
+            background-color: #1D1D1D;
+            border: 1px solid #1D1D1D;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        br {
+            width: 100%;
+            height: 1px;
+            margin: 0 auto;
+            background: #6200EE;
+
+        }
+
+        h1 {
+            color: #6200EE;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: left;
+            color: #03DAC6;
+        }
+
+        html {
+
+            font-family: Verdana, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+
+        }
+        .picRight{
+            position: relative right;
+            float: right;
+            margin:0 0 20px 20px;
+        }
