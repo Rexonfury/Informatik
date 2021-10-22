@@ -37,7 +37,10 @@ h3 {
             border: 1px solid #1D1D1D;
             border-radius: 8px;
 }
-.code {
+.code,
+.verschachtelungvonelementencode,
+.Testc1,
+.Testc2 {
             background-color: #1D1D1D;
             border: 1px solid;
             border: 1px solid #1D1D1D;
