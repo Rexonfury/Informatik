@@ -1,53 +1,62 @@
-.elemente_und_tags,
-        .verschachtelung_von_elementen,
-        .alleinstehende_elemente,
-        .footer {
-            padding-left: 15px;
+html {
+
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    padding-left: 15px;
+}
+
+hr{
+    margin: 0 auto;
+    width: 95%;
+}
+h1 {
+    border-bottom: 1px solid #ffffff;
+
+
+}
+h3 {
+    border-bottom: 1px solid #ffffff;
+
+
+}
+#inhaltsverzeichnis {
+    text-align: center;
+    border-bottom: 0px solid #ffffff;
+}
+.code {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 90%;
+}
+.inhaltsverzeichnis {
             background-color: #1D1D1D;
+            margin-right: 82em;
+            border: 1px solid;
+	        padding: 0px 0px 0px 0px;
             border: 1px solid #1D1D1D;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-
-        .Inhaltsverzeichnis {
-            padding-left: 15px;
+            border-radius: 8px;
+}
+.code {
             background-color: #1D1D1D;
+            border: 1px solid;
             border: 1px solid #1D1D1D;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-bottom: 15px;
-            
-        }
-        .bildrechts {
-            float: right;
-            width: 13%;
-        }
-        br {
-            width: 100%;
-            height: 1px;
-            margin: 0 auto;
-            background: #6200EE;
+            margin-right: 1100px;
+            border: 1px solid #1D1D1D;
+}
+ol {
+	counter-reset: table-of-content;
+	list-style-type: none;
+}
 
-        }
+li::before {
+	counter-increment: table-of-content;
+	content: counters(table-of-content, ".", decimal) " ";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
 
-        h1 {
-            color: #6200EE;
-            text-align: center;
-        }
-
-        h2 {
-            text-align: left;
-            color: #03DAC6;
-        }
-
-        html {
-
-            font-family: Verdana, Helvetica, Arial, sans-serif;
-            background-color: #121212;
-            color: white;
-
-        }
-        .picRight{
-            position: relative right;
-            float: right;
-            margin:0 0 20px 20px;
-        }
+li li::before {
+	color: rgb(255, 255, 255);
+}
