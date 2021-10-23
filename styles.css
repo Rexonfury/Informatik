@@ -177,3 +177,9 @@ figcaption {
   padding: .8em;
   margin-left: 250px;
 }
+a:link, a:visited, a:active {
+  color: rgb(255, 255, 255);
+}
+a:hover {
+  color: aqua;
+}
