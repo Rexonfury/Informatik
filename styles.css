@@ -183,3 +183,7 @@ a:link, a:visited, a:active {
 a:hover {
   color: aqua;
 }
+.fa-Navigation:hover {
+  background-color: #594F8D;
+  padding: 32px 30px 31px 31px;
+}
