@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
 html {
 
-    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif;
     background-color: #121212;
     color: white;
 }
@@ -10,7 +11,7 @@ html {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-family: 'Roboto',Verdana, Helvetica, Arial, sans-serif;
   }
 .verpackung{
     display: flex;
@@ -123,7 +124,7 @@ h3 {
     border-bottom: 0px solid #ffffff;
 }
 .code {
-    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif;
     font-size: 90%;
 }
 .inhaltsverzeichnis {
@@ -135,8 +136,8 @@ h3 {
 }
 .code,
 .verschachtelungvonelementencode,
-.Testc1,
-.Testc2 {
+.Test1div,
+.Test2div {
             background-color: #1D1D1D;
             border: 1px solid;
             border: 1px solid #1D1D1D;
