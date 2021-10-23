@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="verpackung">
+    <nav>
+        <div class="seitenleiste">
+            <h2> Navigation </h2>
+            <ul id="navigation">
+                <li><a href="#inhaltsverzeichnis2"><i class="fas fa-inhaltsverzeichnis2"></i>Was ist das?</a>
+                </li>
+                <li><a href="#ElementeundTags"><i class="fas fa-ElementeundTags"></i>Verbindungsaufbau</a>
+                </li>
+                <li><a href="#VerschachtelungvonElementen"><i
+                            class="fas fa-VerschachtelungvonElementen"></i>Datenübertragung</a>
+                </li>
+                <li><a href="#Test1"><i class="fas fa-Test1"></i>Verbindungsabbau</a>
+                </li>
+                <li><a href="#Test2"><i class="fas fa-Test2"></i>Test2</a>
+                </li>
+            </ul>
+    </nav>
+    <div class="main_content">
+        <div class="header">
+            <h2> NETZ: TCP Protokoll </h2>
+        </div>
+        <div class="info">
+            <section id="inhaltsverzeichnis2">
+                <div class="inhaltsverzeichnis">
+                    <ol>
+                        <li>Was ist das?</li>
+                        <li>Verbindungsaufbau</li>
+                        <li>Datenübertragung
+                            <ol>
+                                <li>Paketverlust</li>
+                            </ol>
+                        </li>
+                        <li>Verbindungsabbau</li>
+                    </ol>
+                </div>
+            </section>
+            <section id="ElementeundTags">
+                <p>
+                <h3> <em>Was ist das?:</em> </h3>
+                </p>
+                <p>
+                    Das Transmission Control Protocol, kurz TCP, dient zur Datenübertragung zwischen zwei Stationen.
+                    Es gehört zusammen mit dem UDP zur Kategorie der Transportprotokolle,
+                    wobei es aber noch mehr Kategorien gibt wie z.B. Überwachung, Darstellung.
+                    Protokolle dienen dazu, um die Verständigung zwischen Computern zu regeln.
+                    Um das nämlich zu erreichen
+                    müssen die Rechner quasi die gleiche Sprache sprechen, bzw. hier das gleiche Protokoll verwenden.
+                <div class="ElementeundTagsdiv">
+                    <pre class="code">
+&lt;h1&gt; HTML - die Sprache des Web &lt;/h1&gt;
+Das Beispiel zeigt eine Überschrift 1. Ordnung, die durch das h1-Element ausgezeichnet ist.
+Das einleitende Tag &lt;h1&gt; signalisiert, dass eine Überschrift 1. Ordnung folgt (h = heading = Überschrift).
+Das abschließende Tag &lt;/h1&gt; signalisiert das Ende der Überschrift.
+Ein abschließendes Tag beginnt mit einer öffnenden spitzen Klammer und einem Schrägstrich &lt;/.
+                </pre>
+                </div>
+                </p>
+            </section>
+            <section id="VerschachtelungvonElementen">
+                <p>
+                <h3><em>Verbindungsaufbau:</em></h3>
+                </p>
+                <p>
+                    Zum Beispiel HTTP, das Protokoll, worüber man Internetseiten aufruft, werden mit einem TCP Paket
+                    übertragen.
+                    Aber damit so eine Übertragung stattfinden kann, muss erstmal eine Verbindung zwischen den beiden
+                    Stationen hergestellt werden.
+                    Dieser Verbindungsaufbau läuft über den Three-Way-Handshake ab, der wie folgt funktioniert:
+                    Der Client, also unser PC, schickt eine Verbindungsanfrage, ein sogenanntes SYN-Flag, an den Server.
+                    Hat der Server diesen empfangen, schickt er eine Bestätigung raus mit dem ACK-Flag und ebenfalls
+                    tuteine Verbindungsanfrage an den Client schicken mit dem SYN-Flag.
+                    Daraufhin bestätigt der Client den Erhalt des Paketes mit einem ACK-Flag und die Datenverbindung
+                    zwischen den beiden ist hergestellt.
+
+                <div class="verschachtelungvonelementencode">
+                        <figure>
+                            <img src="https://www.ionos.de/digitalguide/fileadmin/DigitalGuide/Schaubilder/tcp-verbindungsabbau-tcp-teardown.jpg"
+                                alt="Lauf an der Pegnitz - Nürnberger Tor" width="40%">
+                            <figcaption>TCP Protokoll</figcaption>
+                </div>
+
+                </p>
+
+            </section>
+            <section id="Test1">
+                <p>
+                <h3><em>Datenübertragung:</em></h3>
+                </p>
+                <p>
+                    Nun kann ein tatsächlicher Datenaustausch zwischen Client und Server stattfinden.
+                    Der Server wird nun beginnen sein erstes Datenpaket zu verschicken und wartet auf eine
+                    Empfangsbestätigung.
+                    Der Empfänger im besten Fall das Datenpaket entgegennehmen und schickt seine Bestätigung raus.
+                    Nach dem der Sender die Bestätigung erhalten hat wir er damit anfangen auf die gleiche Weise das
+                    zweite Paket zu versenden.
+                    Dieser Vorgang läuft bis zum Übertragungsende so weiter ab. Doch es kann in manchmal zu einem
+                    Paketverlust kommen,
+                    denn die Verbindung ist nicht immer zu 100% stabil vor allem im Internet kann es häufig passieren,
+                    dass ein Paket nicht den Weg zum Empfänger findet. Doch das TCP sorgt dafür das die Daten vom Sender
+                    1 zu 1 zum Empfänger übertragen werden.
+                    Dafür sorgen nämlich die Sequenznummern, die jedes Paket vom Sender erhalten haben.
+                    Anhand der Durchnummerierung kann das Protokoll nun feststellen, ob ein Paket verloren
+                    gegangen ist und ob es erneut versendet werden muss. Hat der Sender nach Ablauf eines
+                    bestimmten Zeitraumes keine Bestätigung zum Erhalt des Pakets vom Client bekommen,
+                    wird das Paket automatisch erneut verschickt und wartet wieder auf eine Rückmeldung.
+
+                <div class="Test1div">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et
+                    dolore magna <br>
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                    clita
+                    kasd
+                    gubergren, no sea takimata <br>
+                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam
+                    nonumy eirmod tempor <br>
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                    duo
+                    dolores et ea rebum. Stet <br>
+                    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>
+
+                </div>
+
+                </p>
+
+            </section>
+            <section id="Test2">
+                <p>
+                <h3><em>Verbindungsabbau:</em></h3>
+                </p>
+                <p>
+                    Ist die Datenübertragung nun abgeschlossen, kommt es zu einem Verbindungsabbau.
+                    Dieser kann vom Server oder vom Client ausgehen, indem der beiden ein FIN-Flag an die
+                    Gegenstelle sendet. Diesen muss der andere dann mit dem ACK-Flag bestätigen und
+                    schickt ebenfalls ein FIN-Flag. ISt die Verbindung dann abgebaut, folgt ein letztes ACK-Flag
+                    um das zu Bestätigen. <br>
+                    Das ist so grundlegend das Transmission Control Protocol.
+
+
+                <div class="Test2div">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et
+                    dolore magna <br>
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                    clita
+                    kasd
+                    gubergren, no sea takimata <br>
+                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam
+                    nonumy eirmod tempor <br>
+
+                </div>
+
+                </p>
+
+            </section>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

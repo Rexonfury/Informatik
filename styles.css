@@ -171,4 +171,9 @@ li li::before {
 
 ol ol {
     margin-left: 2em;
-    }
+}
+
+figcaption {
+  padding: .8em;
+  margin-left: 250px;
+}
