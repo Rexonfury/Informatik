@@ -123,10 +123,6 @@ h3 {
     text-align: center;
     border-bottom: 0px solid #ffffff;
 }
-.code {
-    font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif;
-    font-size: 90%;
-}
 .inhaltsverzeichnis {
             background-color: #1D1D1D;
             border: 1px solid;
@@ -134,7 +130,7 @@ h3 {
             border: 1px solid #1D1D1D;
             border-radius: 8px;
 }
-.code,
+.ElementeundTagsdiv,
 .verschachtelungvonelementencode,
 .Test1div,
 .Test2div {
