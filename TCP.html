@@ -30,6 +30,7 @@
         <div class="info">
             <section id="inhaltsverzeichnis2">
                 <div class="inhaltsverzeichnis">
+                    <h3 id="inhaltsverzeichnis">Inhaltsverzeichnis: </h3>
                     <ol>
                         <li>Was ist das?</li>
                         <li>Verbindungsaufbau</li>
@@ -47,12 +48,7 @@
                     <h3> <em>Was ist das?:</em> </h3>
                 </p>
                 <p>
-                    Das Transmission Control Protocol, kurz TCP, dient zur Datenübertragung zwischen zwei Stationen.
-                    Es gehört zusammen mit dem UDP zur Kategorie der Transportprotokolle,
-                    wobei es aber noch mehr Kategorien gibt wie z.B. Überwachung, Darstellung.
-                    Protokolle dienen dazu, um die Verständigung zwischen Computern zu regeln.
-                    Um das nämlich zu erreichen
-                    müssen die Rechner quasi die gleiche Sprache sprechen, bzw. hier das gleiche Protokoll verwenden.
+
                     <div class="ElementeundTagsdiv">
                         <ul>
                             <li>Protokoll zur Datenübertragung zwischen Client und Server</li>
@@ -68,17 +64,7 @@
                 <h3><em>Verbindungsaufbau:</em></h3>
                 </p>
                 <p>
-                    Zum Beispiel HTTP, das Protokoll, worüber man Internetseiten aufruft, werden mit einem TCP Paket
-                    übertragen.
-                    Aber damit so eine Übertragung stattfinden kann, muss erstmal eine Verbindung zwischen den beiden
-                    Stationen hergestellt werden.
-                    Dieser Verbindungsaufbau läuft über den Three-Way-Handshake ab, der wie folgt funktioniert:
-                    Der Client, also unser PC, schickt eine Verbindungsanfrage, ein sogenanntes SYN-Flag, an den Server.
-                    Hat der Server diesen empfangen, schickt er eine Bestätigung raus mit dem ACK-Flag und ebenfalls
-                    tuteine Verbindungsanfrage an den Client schicken mit dem SYN-Flag.
-                    Daraufhin bestätigt der Client den Erhalt des Paketes mit einem ACK-Flag und die Datenverbindung
-                    zwischen den beiden ist hergestellt.
-
+                    
                 <div class="verschachtelungvonelementencode">
                     <figure>
                         <img src="https://media.discordapp.net/attachments/889145347841081405/901799996603637770/Verbaufbau_2.png"
@@ -93,22 +79,7 @@
                 <h3><em>Datenübertragung:</em></h3>
                 </p>
                 <p>
-                    Nun kann ein tatsächlicher Datenaustausch zwischen Client und Server stattfinden.
-                    Der Server wird nun beginnen sein erstes Datenpaket zu verschicken und wartet auf eine
-                    Empfangsbestätigung.
-                    Der Empfänger im besten Fall das Datenpaket entgegennehmen und schickt seine Bestätigung raus.
-                    Nach dem der Sender die Bestätigung erhalten hat wir er damit anfangen auf die gleiche Weise das
-                    zweite Paket zu versenden.
-                    Dieser Vorgang läuft bis zum Übertragungsende so weiter ab. Doch es kann in manchmal zu einem
-                    Paketverlust kommen,
-                    denn die Verbindung ist nicht immer zu 100% stabil vor allem im Internet kann es häufig passieren,
-                    dass ein Paket nicht den Weg zum Empfänger findet. Doch das TCP sorgt dafür das die Daten vom Sender
-                    1 zu 1 zum Empfänger übertragen werden.
-                    Dafür sorgen nämlich die Sequenznummern, die jedes Paket vom Sender erhalten haben. <br>
-                    Anhand der Durchnummerierung kann das Protokoll nun feststellen, ob ein Paket verloren
-                    gegangen ist und ob es erneut versendet werden muss. Hat der Sender nach Ablauf eines
-                    bestimmten Zeitraumes keine Bestätigung zum Erhalt des Pakets vom Client bekommen,
-                    wird das Paket automatisch erneut verschickt und wartet wieder auf eine Rückmeldung.
+                   
 
                 <div class="Test1div">
                     <ul>
@@ -136,12 +107,7 @@
                 <h3><em>Verbindungsabbau:</em></h3>
                 </p>
                 <p>
-                    Ist die Datenübertragung nun abgeschlossen, kommt es zu einem Verbindungsabbau.
-                    Dieser kann vom Server oder vom Client ausgehen, indem der beiden ein FIN-Flag an die
-                    Gegenstelle sendet. Diesen muss der andere dann mit dem ACK-Flag bestätigen und
-                    schickt ebenfalls ein FIN-Flag. ISt die Verbindung dann abgebaut, folgt ein letztes ACK-Flag
-                    um das zu Bestätigen. <br>
-                    Das ist so grundlegend das Transmission Control Protocol.
+                   
 
 
                 <div class="Test2div">

@@ -132,7 +132,17 @@ h3 {
 .ElementeundTagsdiv,
 .verschachtelungvonelementencode,
 .Test1div,
-.Test2div {
+.Test2div,
+.TagP,
+.TagUL,
+.Tagdiv,
+.TagTable,
+.TagA,
+.TagI,
+.TagB,
+.TagCode,
+.TagImg,
+.TagPicture {
   background-color: #1D1D1D;
   border-radius: 8px;
   border: 1px solid #1D1D1D;
@@ -187,5 +197,5 @@ a:hover {
   padding: 32px 30px 31px 31px;
 }
 .Farberot {
-  color: red ;
+  color: #79c0ff ;
 }
