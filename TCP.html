@@ -44,7 +44,7 @@
             </section>
             <section id="ElementeundTags">
                 <p>
-                <h3> <em>Was ist das?:</em> </h3>
+                    <h3> <em>Was ist das?:</em> </h3>
                 </p>
                 <p>
                     Das Transmission Control Protocol, kurz TCP, dient zur Datenübertragung zwischen zwei Stationen.
@@ -53,16 +53,14 @@
                     Protokolle dienen dazu, um die Verständigung zwischen Computern zu regeln.
                     Um das nämlich zu erreichen
                     müssen die Rechner quasi die gleiche Sprache sprechen, bzw. hier das gleiche Protokoll verwenden.
-                <div class="ElementeundTagsdiv">
-                    <pre class="code">
-<p>
-•Protokoll zur Datenübertragung zwischen Client und Server<br>
-•Ein Transportprotokoll<br>
-•Wenn Paket erhalten: Nächstes Paket wird versendet<br>
-•Wenn nicht: Paketverlust<br>
-</p>
-                </pre>
-                </div>
+                    <div class="ElementeundTagsdiv">
+                        <ul>
+                            <li>Protokoll zur Datenübertragung zwischen Client und Server</li>
+                            <li>Ein Transportprotokoll</li>
+                            <li>Wenn Paket erhalten: Nächstes Paket wird versendet</li>
+                            <li>Wenn nicht: Paketverlust</li>
+                        </ul>
+                    </div>
                 </p>
             </section>
             <section id="VerschachtelungvonElementen">
@@ -113,21 +111,23 @@
                     wird das Paket automatisch erneut verschickt und wartet wieder auf eine Rückmeldung.
 
                 <div class="Test1div">
-                    <p>
-                        •Daten werden in Pakete verpackt <br>
-                        •Sender sendet Pakete an den Empfänger und wartet auf Bestätigung <br>
-                        •Wenn Bestätigung erhalten: Nächstes Paket wird versendet <br>
-                        •Wenn nicht: Paketverlust <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Paket ist nicht angekommen <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Jedes Paket hat eine Sequenznummer <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ dient für richtige
-                        Reihenfolge und Vermeidung von Duplikaten <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Festellung, welches Paket verloren gegangen ist durch
-                        Sequenznummer <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Erneuter Versuch das Paket zu versenden <br>
-
-
-                    </p>
+                    <ul>
+                        <li>Daten werden in Pakete verpackt</li>
+                        <li>Sender sendet Pakete an den Empfänger und wartet auf Bestätigung</li>
+                        <li>Wenn Bestätigung erhalten: Nächstes Paket wird versendet</li>
+                        <li>
+                            Wenn nicht: Paketverlust
+                            <ul>
+                                <li>Paket ist nicht angekommen</li>
+                                <li>Jedes Paket hat eine Sequenznummer</li>
+                                <ul style="list-style-type: circle;">
+                                    <li>dient für richtige Reihenfolge und Vermeidung von Duplikaten</li>
+                                </ul>
+                                <li>Festellung, welches Paket verloren gegangen ist durch Sequenznummer</li>
+                                <li>Erneuter Versuch das Paket zu versenden</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
             </section>
