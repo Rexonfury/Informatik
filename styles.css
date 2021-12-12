@@ -203,6 +203,7 @@ a:hover {
 /* Input */
 .Textdiv,
 .Submit-Buttondiv,
+.Checkboxdiv,
 .Targetattributediv {
   background-color: #1D1D1D;
   border-radius: 8px;
@@ -212,8 +213,5 @@ a:hover {
 }
 
 .hljs {
-  border-radius: 10px;
-  background-color: #1D1D1D !important;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  background-color: #121212 !important;
 }
