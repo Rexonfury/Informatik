@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="verpackung">
+    <nav>
+        <div class="seitenleiste">
+            <h2> <a class="fa-Navigation" href="index.html"> Navigation</a> </h2>
+            <ul id="navigation">
+                <li><a href="#Textdiv"><i class="fas fa-inhaltsverzeichnis2"></i>Text</a>
+                </li>
+                <li><a href="Checkboxdiv"><i class="fas fa-ElementeundTags"></i>Checkbox</a>
+                </li>
+                <li><a href="Submit-Buttondiv"><i class="fas fa-VerschachtelungvonElementen"></i>Submit-Button</a>
+                </li>
+                <li><a href="#Targetattributediv"><i class="fas fa-Test1"></i>Target attribute
+                </a>
+                </li>
+            </ul>
+    </nav>
+    <div class="main_content">
+        <div class="header">
+            <h2> NETZ: TCP - Transmission Control Protocol</h2>
+        </div>
+        <div class="info">
+            <section id="inhaltsverzeichnis2">
+                <div class="inhaltsverzeichnis">
+                    <h3 id="inhaltsverzeichnis">Inhaltsverzeichnis: </h3>
+                    <ol>
+                        <li>Text:</li>
+                        <li>Checkbox:</li>
+                        <li>Submit-Button: </li>
+                        <li>Target attribute</li>
+                    </ol>
+                </div>
+            </section>
+            <section id="Text">
+                <p>
+                    <h3> <em>Text:</em> </h3>
+                </p>
+                <p>
+<!-- Text:  <input type="text"> definiert ein einzeiliges Texteingabefeld:
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form> -->
+                    <div class="Textdiv">
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      </form>
+
+                    </div>
+                </p>
+            </section>
+            <section id="Checkbox">
+                <p>
+                <h3><em>Checkbox:</em></h3>
+                </p>
+                <p>
+                <!-- einzeiliger Kommentar -->
+                <div class="Checkboxdiv">
+                    <form>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I have a bike</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> I have a car</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> I have a boat</label>
+                      </form>
+                </div>
+
+                </p>
+
+            </section>
+            <section id="Submit-Button">
+                <p>
+                <h3><em>Submit-Button:</em></h3>
+                </p>
+                <p>
+                   
+
+                <div class="Submit-Buttondiv">
+                    <form action="/action_page.php">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="Martin"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Washen"><br><br>
+                        <input type="submit" value="Submit">
+                      </form> 
+                      
+                </div>
+
+            </section>
+            <section id="Targetattribute">
+                <p>
+                <h3><em>Target attribute:</em></h3>
+                </p>
+                <p>
+                   
+
+
+                <div class="Targetattributediv">
+                    <form action="/action_page.php" method="get" target="_blank">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
+
+                </p>
+
+            </section>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
