@@ -210,3 +210,10 @@ a:hover {
   padding: 1em;
   padding: 20px;
 }
+
+.hljs {
+  border-radius: 10px;
+  background-color: #1D1D1D !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
