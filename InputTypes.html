@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/github-dark.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body class="verpackung">
@@ -63,12 +67,20 @@
                     </div>
                 </p>
             </section>
+
             <section id="Checkbox">
-                <p>
                 <h3><em>Checkbox:</em></h3>
-                </p>
-                <p>
+
                 <!-- einzeiliger Kommentar -->
+<pre class="hljs"><code class="language-html">&lt;form&gt;
+        &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
+        &lt;label for="vehicle1"&gt; I have a bike&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
+        &lt;label for="vehicle2"&gt; I have a car&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"&gt;
+        &lt;label for="vehicle3"&gt; I have a boat&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+
                 <div class="Checkboxdiv">
                     <form>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -79,16 +91,18 @@
                         <label for="vehicle3"> I have a boat</label>
                       </form>
                 </div>
-
-                </p>
-
             </section>
+
             <section id="Submit-Button">
-                <p>
                 <h3><em>Submit-Button:</em></h3>
-                </p>
-                <p>
                    
+<pre class="hljs"><code class="language-html">&lt;form action="/action_page.php"&gt;
+    &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="fname" name="fname" value="Max"&gt;&lt;br&gt;
+    &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="lname" name="lname" value="Weindl"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
 
                 <div class="Submit-Buttondiv">
                     <form action="/action_page.php">
@@ -100,15 +114,18 @@
                       </form> 
                       
                 </div>
-
             </section>
-            <section id="Targetattribute">
-                <p>
-                <h3><em>Target attribute:</em></h3>
-                </p>
-                <p>
-                   
 
+            <section id="Targetattribute">
+                <h3><em>Target attribute:</em></h3>
+
+<pre class="hljs"><code class="language-html">&lt;form action="/action_page.php" method="get" target="_blank"&gt;
+        &lt;label for="fname"&gt;First name:&lt;/label&gt;
+        &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+        &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+        &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+        &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
 
                 <div class="Targetattributediv">
                     <form action="/action_page.php" method="get" target="_blank">
@@ -119,9 +136,6 @@
                         <input type="submit" value="Submit">
                       </form>
                 </div>
-
-                </p>
-
             </section>
         </div>
     </div>
